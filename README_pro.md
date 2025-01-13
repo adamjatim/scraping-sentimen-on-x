@@ -2,7 +2,7 @@
 
 > [!NOTE]  
 > disini aku udah sediain buat versi [berbayar](/README_pro.md) sama versi [gratis-nya](/README.md).
-> yang ini adalah versi *gratis-nya*.
+> yang ini adalah versi *berbayar-nya*.
 
 sebelum mulai pastikan untuk menginstall dependency yang diperlukan seperti :
 - dotenv
@@ -21,11 +21,13 @@ pip install snscrape
 jadi begini mas bro, ini kan aku udah nyoba scraping pake API punyanya x toh, di web [Developer Portal X](https://developer.x.com/en/portal/dashboard)
 ![](/image/Group%2037.png)
 
-nah, untuk versi Gratisnya, kamu harus generate *Bearer Token-nya*.
+nah, ini tuh aku udah nyoba buat generate API key-nya.
 jadi pas di **Project & Apps**
 ![](/image/Screenshot%20from%202025-01-13%2022-31-46.png)
-> generate Bearer Token-nya
-![](/image/Group%2038.png)
+> generate API key-nya
+![](/image/Group%2040.png)
+> generate AccessToken-nya
+![](/image/Group%2039.png)
 
 Jangan lupa nanti habis ngeclone repository ku, kamu bikin file **.env** dulu buat nyimpen API Key sama AccessToken-nya 
 > Bisa kayak gini
@@ -46,25 +48,12 @@ ACCESS_TOKEN_SECRET=your_access_token_secret_here
 BEARER_TOKEN=your_bearer_token_here
 ```
 
-Copy *Bearer Token-nya* dari Developer Portal ke *.env* yang ada didalam kode mu
+Copy *API Key dan Secret Key-nya* dari Developer Portal ke *.env* yang ada didalam kode mu
 ![](/image/Screenshot%20from%202025-01-13%2022-51-13.png)
 
-Lalu jalankan kode python yang ada [di sini](/main.py)
+Lalu jalankan kode python yang ada [di sini](/pro_main.py)
 ```bash
-python main.py
+python pro_main.py
 ```
-![](/image/Screenshot%20from%202025-01-13%2022-54-37.png)
-
-> [!IMPORTANT]
-> Pastikan untuk mengisi nilai ***max_results***
-> karena kebijakan X/Twitter yang baru melimitasi akses API
-
-Contoh setelah menggunakan API tersebut :
-Pada bagian *Monthly Post cap usage* sudah terpakai untuk 10 post
-![](/image/Group%2037.png)
-
-aku udah nyoba buat generate, hasilnya bisa di cek [disini](/main_result.txt)
-
-
-sebenar-nya ada versi lain, yaitu pake 3rd party kayak [snscrape](https://github.com/JustAnotherArchivist/snscrape), cuman karena kebijakan yang baru, dari kemaren nyoba error terus 😭
-![](/image/Screenshot%20from%202025-01-13%2023-08-27.png)
+disini, karena aku gk pake yang berbayar, karena ***MAHAL~*** 😭
+jadi aku gk bisa tunjukin gimana hasilnya.
